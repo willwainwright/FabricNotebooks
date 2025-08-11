@@ -1,0 +1,12 @@
+tables:
+  - name: silver.utilisation
+    tests:
+      - type: row_count
+        min: 1
+      - type: not_null
+        column: Resource_ID
+
+  - name: gold.utilisation_weekly
+    tests:
+      - type: row_count
+        min: 1
